@@ -1,0 +1,39 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(hi.webp);
+    
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 8px;
+
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    cursor: pointer;
+    border: 3px solid #0b0a0a;
+    text-align: center;
+    background:transparent;
+    
+    
+}
+
+.cell.taken {
+    cursor: not-allowed;
+}
